@@ -1,0 +1,39 @@
+body{
+  
+}
+
+.container{
+  display: grid;
+  grid-template-columns: minmax(200px, 20%) repeat(3,1fr);
+  grid-template-rows: 200px 1fr 1fr;
+  min-height: 100vh;
+}
+
+.sidebar{
+  grid-column: 1;
+  grid-row: 1/4;
+  background-color: red;
+}
+
+.header{
+  grid-column: 2/5;
+  background-color: blue;
+}
+
+.project-cards{
+  grid-row: 2/4;
+  grid-column: 2/4;
+  background: green;
+}
+
+.announcements{
+  grid-row: 2;
+  grid-column: 4;
+  background-color: aqua;
+}
+
+.trending{
+  grid-row: 3;
+  grid-column: 4;
+  background-color: darkorange;
+}
