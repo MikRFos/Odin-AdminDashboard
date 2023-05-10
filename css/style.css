@@ -49,6 +49,7 @@ a{
   display: flex;
   flex-direction: column;
   gap: 8px;
+  font-weight: bold;
 }
 
 .header{
@@ -117,8 +118,23 @@ button{
 
 .card{
   background-color: white;
-  padding: 3px;
+  padding: 25px;
   box-shadow: -5px 0px goldenrod;
   border-radius: 20px;
   overflow:auto;
+}
+
+.side-grid{
+  background-color: white;
+  display: grid;
+  grid-auto-rows: minmax(100px, 1fr);
+  margin-right: 50px;
+  border-radius: 30px;
+  align-items: center;
+  justify-items: center;
+}
+
+.side-grid-content{
+  width: 80%;
+  padding: 0 10% 0 10%;
 }
